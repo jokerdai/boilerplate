@@ -1,0 +1,274 @@
+/* ----------left样式---------- */
+ul,li{
+    -webkit-padding-start: 0px;
+}
+.left-side {
+    position: absolute;
+    display: block;
+    -webkit-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .2);
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .2);
+}
+
+.left-side > .sone-left-menu > .item.item-open > .itm-lv1 {
+    background: none repeat scroll 0 0 #fff;
+}
+
+.bootbox-body {
+    overflow-x: auto;
+}
+
+.left-side > .sone-left-menu > .item-one.item-open > .itm-lv2 > ul.sone-menu-list > .item-two:hover, .left-side > .sone-left-menu > .item-one.item-open > .itm-lv2 > ul.sone-menu-list > .item-two.curr {
+    color: #2dc3e8;
+    background-color: #f5f5f5;
+    border-left: 3px solid #3dc3e8;
+}
+
+.item-one > .itm-lv2 {
+    position: relative;
+    -moz-box-shadow: inset 0 4px 4px -2px rgba(0, 0, 0, .15), inset 0 -4px 4px -2px rgba(0, 0, 0, .15);
+    box-shadow: inset 0 4px 4px -2px rgba(0, 0, 0, .15), inset 0 -4px 4px -2px rgba(0, 0, 0, .15);
+}
+
+.item > .itm-lv2 {
+    display: none;
+    zoom: 1;
+}
+
+.item-open > .itm-lv2 {
+    display: block;
+}
+
+.item-one > .itm-lv1, .item-three.item-open > .itm-lv1, .item-four.item-open > .itm-lv1, .item-open.item-two > .itm-lv1, .item-open.item-three > .itm-lv1 {
+    color: #2dc3e8;
+}
+
+.sone-left-menu .item-one > .itm-lv1 .tit span.fa {
+    font-size: 18px;
+    display: block;
+}
+
+.itm-lv2 li {
+    font: 13px/34px "Microsoft Yahei";
+    text-decoration: none;
+    position: relative;
+    color: #737373;
+}
+
+.itm-lv1 span.fa {
+    font-size: 18px;
+}
+
+.item-two > .itm-lv2 > .sone-menu-list {
+    border-left: 1px solid #e2e2e2;
+    bottom: 19px;
+    content: "";
+    display: block;
+    top: 0;
+    z-index: 1;
+    margin-left: 35px;
+}
+
+.item-three:before {
+    background-color: #2dc3e8;
+    bottom: 0;
+    content: "";
+    display: none;
+    left: -4px;
+    max-width: 4px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 4px;
+}
+
+.item-three > .itm-lv1:before {
+    border-top: 1px dotted #e2e2e2;
+    content: "";
+    display: inline-block;
+    left: -4px;
+    position: absolute;
+    top: 20px;
+    width: 20px;
+}
+
+.menu-expand {
+    color: #666;
+    display: inline-block;
+    font-family: "FontAwesome";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: normal;
+    height: 10px;
+    line-height: 10px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 12px;
+    text-align: center;
+    text-shadow: none;
+    top: 15px;
+    transition: all 300ms ease-in-out 0s;
+    width: 10px;
+}
+
+.item-two.item-open > .itm-lv1 > .menu-expand, .item-three.item-open > .itm-lv1 > .menu-expand, .item-one.item-open > .itm-lv1 > .menu-expand {
+    transform: rotate(90deg);
+    color: #2dc3e8;
+}
+
+.sone-left-menu {
+    width: 202px;
+    border: 1px solid #e2e2e0;
+    float: left;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.sone-left-menu .item.itm-one .itm-lv1 {
+    padding: 6px 0;
+}
+.sone-left-menu .item.itm-one .itm-lv1 .fa {
+    width: 45px;
+}
+.sone-left-menu .item {
+    background: #f8f8f8;
+    position: relative;
+    border-bottom: 1px solid #eaeae8;
+    cursor: pointer;
+}
+.sone-left-menu .item .itm-lv1 {
+    padding: 10px 0 10px 0;
+    width: 180px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.sone-left-menu .item .itm-lv1 .tit {
+    float: left;
+    width: 70px;
+    height: 60px;
+    text-align: center;
+}
+.sone-left-menu .item .itm-lv1 s {
+    position: absolute;
+    top: 5px;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 11px;
+    background: #e55473;
+    color: #fff;
+    font-size: 12px;
+}
+.sone-left-menu .item .itm-lv1 .con {
+    height: 60px;
+    border-left: 1px solid #eaeae8;
+    padding: 0px 0 0 10px;
+    margin-left: 70px;
+}
+.sone-left-menu .item .itm-lv1 .con .info span {
+    display: inline-block;
+    font: 14px "Microsoft Yahei";
+}
+.sone-left-menu .item .itm-lv1 .con .info span b {
+    color: #2dc3e8;
+    text-decoration: none;
+    font-weight: normal;
+}
+.sone-left-menu .item .itm-lv1 .con .price {
+    font: 18px "Microsoft Yahei";
+}
+.sone-left-menu .item .itm-lv1 .con .price strong {
+    color: #2dc3e8;
+    font-size: 18px;
+    font-weight: bold;
+}
+.sone-left-menu .item .itm-lv2 ul li.curr a {
+    color: #28afd0;
+}
+.sone-left-menu .item .itm-lv2 ul li {
+    border-left: 3px solid #f8f8f8;
+    position: relative;
+}
+.sone-left-menu .item .itm-lv2 ul li a {
+    display: block;
+    height: 35px;
+    color: #fff;
+    font: 13px/34px "Microsoft Yahei";
+    /* padding-left: 12px;*/
+    text-decoration: none;
+    position: relative;
+    color: #737373;
+}
+.sone-left-menu .item .itm-lv2 ul li a:hover {
+    color: #28afd0;
+}
+.sone-left-menu .item-open .itm-lv1 .con .price {
+    color: #2dc3e8;
+}
+.sone-left-menu .resizer {
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    background: #f8f8f8;
+    cursor: pointer;
+}
+.sone-left-menu .resizer b {
+    display: inline-block;
+    margin-top: 14px;
+    width: 8px;
+    height: 7px;
+    background: url(http://ls.jd.com/resources/soneui/img/icons.png) no-repeat -42px -238px;
+}
+
+
+.menuicon1{
+    background:url("../img/icons.png")no-repeat scroll -6px -2px rgba(0, 0, 0, 0);
+    height: 30px;
+    width: 40px;
+    margin:0 auto;
+    display: block;
+}
+.menuicon2{
+    background: url("../img/icons.png") no-repeat scroll -6px -31px rgba(0, 0, 0, 0);
+    height:40px;
+    width: 42px;
+    margin:0 auto;
+    display: block;
+}
+.menuicon3{
+    background: url("../img/icons.png") no-repeat scroll -6px -66px rgba(0, 0, 0, 0);
+    height:40px;
+    width: 42px;
+    margin:0 auto;
+    display: block;
+}
+.menuicon4{
+    background: url("../img/icons.png") no-repeat scroll -6px -99px rgba(0, 0, 0, 0);
+    height:38px;
+    width: 42px;
+    margin:0 auto;
+    display: block;
+}
+.menuicon5{
+    background: url("../img/icons.png") no-repeat scroll -6px -134px rgba(0, 0, 0, 0);
+    height:38px;
+    width: 42px;
+    margin:0 auto;
+    display: block;
+}
+.menuicon6{
+    background: url("../img/icons.png") no-repeat scroll -6px -170px rgba(0, 0, 0, 0);
+    height:35px;
+    width: 42px;
+    margin:0 auto;
+    display: block;
+}
+
+.narrow-content {
+    margin: 0 0 0 78px!important
+}
+

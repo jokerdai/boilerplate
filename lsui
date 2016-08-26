@@ -1,0 +1,36 @@
+#!/bin/bash
+
+function do_help(){
+    echo "UI: 运行UI系统"
+}
+
+function do_start_ui(){
+    kill -9  `lsof -i:8080 | grep node | awk '{print $2}'`
+    cnpm install
+    npm run linux-start &
+}
+
+function do_ui_build(){
+    npm run linux-build 
+}
+
+for OPT in $@ ; do
+
+    echo "开始执行： $OPT"
+
+    case $OPT in
+       dev|all)
+            do_start_ui
+            ;;
+        ui)
+            do_start_ui
+            ;;
+        release)
+            do_ui_build
+            ;;
+        help)
+            do_help
+            ;;
+    esac
+
+done
